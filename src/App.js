@@ -2,9 +2,9 @@ import logo from './logo.svg';
 import './App.css';
 
 function App() {
-  function a() {
-    alert("d")
-    fetch('http://16.171.238.101:81/user/listtemplate/1');
+  async function a() {
+    const response = await fetch('http://16.171.238.101:81/user/listtemplate/1');
+    alert(response.status);
 
   }
 
